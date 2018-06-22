@@ -88,6 +88,7 @@
 		7A7CF6B220DCDF1E006D6744 /* headache-min.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A7CF66A20DCDF1E006D6744 /* headache-min.png */; };
 		7A7CF6B320DCDF1E006D6744 /* music-min.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A7CF66B20DCDF1E006D6744 /* music-min.png */; };
 		7A7CF6B620DCDF5F006D6744 /* CDIdea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CF6B520DCDF5F006D6744 /* CDIdea.swift */; };
+		7A7CF6B820DD00C2006D6744 /* thinkingapple-min.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A7CF6B720DD00C2006D6744 /* thinkingapple-min.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -174,6 +175,7 @@
 		7A7CF66A20DCDF1E006D6744 /* headache-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "headache-min.png"; sourceTree = "<group>"; };
 		7A7CF66B20DCDF1E006D6744 /* music-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "music-min.png"; sourceTree = "<group>"; };
 		7A7CF6B520DCDF5F006D6744 /* CDIdea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDIdea.swift; sourceTree = "<group>"; };
+		7A7CF6B720DD00C2006D6744 /* thinkingapple-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thinkingapple-min.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 		7A7CF62320DCDEEA006D6744 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				7A7CF6B720DD00C2006D6744 /* thinkingapple-min.png */,
 				7A7CF65520DCDF1C006D6744 /* 50percentoff-min.png */,
 				7A7CF64720DCDF1B006D6744 /* alien-min.png */,
 				7A7CF64120DCDF1A006D6744 /* anonymous-min.png */,
@@ -405,6 +408,7 @@
 				7A7CF69120DCDF1E006D6744 /* puzzle-min.png in Resources */,
 				7A7CF68D20DCDF1E006D6744 /* forkknife-min.png in Resources */,
 				7A7CF67520DCDF1E006D6744 /* dice-min.png in Resources */,
+				7A7CF6B820DD00C2006D6744 /* thinkingapple-min.png in Resources */,
 				7A7CF68F20DCDF1E006D6744 /* alien-min.png in Resources */,
 				7A7CF6A220DCDF1E006D6744 /* combo-min.png in Resources */,
 				7A7CF68820DCDF1E006D6744 /* setting-min.png in Resources */,

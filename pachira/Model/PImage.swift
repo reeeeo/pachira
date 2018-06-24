@@ -16,4 +16,8 @@ struct PImageManager {
     let ary = dics!["images"] as! [[String:Any]]
     return ary.map { PImage.init(id: $0["id"] as! Int, path: $0["path"] as! String) }
   }
+  
+  static func findPImage(by id: Int16) -> PImage {
+    return self.fetchPImages().filter { $0.id == id }.first!
+  }
 }

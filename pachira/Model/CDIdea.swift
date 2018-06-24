@@ -32,15 +32,14 @@ class CDIdea {
     }
   }
   
-  func add(_ newIdea: Idea) {
+  func add(_ newIdea: [String:Any]) {
     let newRecord = NSManagedObject(entity: idea, insertInto: manageContext) as? Idea
-    newRecord?.setValue(newIdea.id, forKey: "id")
-    newRecord?.setValue(newIdea.name, forKey: "name")
-    newRecord?.setValue(newIdea.memo, forKey: "memo")
-    newRecord?.setValue(newIdea.pic1, forKey: "pic1")
-    newRecord?.setValue(newIdea.pic2, forKey: "pic2")
-    newRecord?.setValue(newIdea.created_at, forKey: "created_at")
-    newRecord?.setValue(newIdea.updated_at, forKey: "updated_at")
+    newRecord?.setValue(newIdea["name"] as! String, forKey: "name")
+    newRecord?.setValue(newIdea["memo"] as! String, forKey: "memo")
+    newRecord?.setValue(newIdea["pic1"] as! Int16, forKey: "pic1")
+    newRecord?.setValue(newIdea["pic2"] as! Int16, forKey: "pic2")
+    newRecord?.setValue(NSDate(), forKey: "created_at")
+    newRecord?.setValue(NSDate(), forKey: "updated_at")
     do {
       try manageContext.save()
     } catch {

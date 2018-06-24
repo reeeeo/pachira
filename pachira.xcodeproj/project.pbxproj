@@ -90,6 +90,9 @@
 		7A7CF6B620DCDF5F006D6744 /* CDIdea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CF6B520DCDF5F006D6744 /* CDIdea.swift */; };
 		7A7CF6B820DD00C2006D6744 /* thinkingapple-min.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A7CF6B720DD00C2006D6744 /* thinkingapple-min.png */; };
 		7A7CF6BA20DD094E006D6744 /* think-min.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A7CF6B920DD094D006D6744 /* think-min.png */; };
+		7A7CF6BC20DD169B006D6744 /* images.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A7CF6BB20DD169B006D6744 /* images.plist */; };
+		7A7CF6BE20DFBA1E006D6744 /* ThinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CF6BD20DFBA1E006D6744 /* ThinkViewController.swift */; };
+		7A7CF6C020DFBC09006D6744 /* PImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CF6BF20DFBC09006D6744 /* PImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -178,6 +181,9 @@
 		7A7CF6B520DCDF5F006D6744 /* CDIdea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDIdea.swift; sourceTree = "<group>"; };
 		7A7CF6B720DD00C2006D6744 /* thinkingapple-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thinkingapple-min.png"; sourceTree = "<group>"; };
 		7A7CF6B920DD094D006D6744 /* think-min.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "think-min.png"; sourceTree = "<group>"; };
+		7A7CF6BB20DD169B006D6744 /* images.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = images.plist; sourceTree = "<group>"; };
+		7A7CF6BD20DFBA1E006D6744 /* ThinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThinkViewController.swift; sourceTree = "<group>"; };
+		7A7CF6BF20DFBC09006D6744 /* PImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,11 +222,13 @@
 				7A7CF62320DCDEEA006D6744 /* image */,
 				7A7CF60A20DCDE55006D6744 /* AppDelegate.swift */,
 				7A7CF60C20DCDE55006D6744 /* ViewController.swift */,
+				7A7CF6BD20DFBA1E006D6744 /* ThinkViewController.swift */,
 				7A7CF60E20DCDE55006D6744 /* Main.storyboard */,
 				7A7CF61420DCDE56006D6744 /* Assets.xcassets */,
 				7A7CF61620DCDE56006D6744 /* LaunchScreen.storyboard */,
 				7A7CF61920DCDE56006D6744 /* Info.plist */,
 				7A7CF61120DCDE55006D6744 /* pachira.xcdatamodeld */,
+				7A7CF6BB20DD169B006D6744 /* images.plist */,
 			);
 			path = pachira;
 			sourceTree = "<group>";
@@ -310,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				7A7CF6B520DCDF5F006D6744 /* CDIdea.swift */,
+				7A7CF6BF20DFBC09006D6744 /* PImage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -382,6 +391,7 @@
 				7A7CF68120DCDF1E006D6744 /* clock-min.png in Resources */,
 				7A7CF69620DCDF1E006D6744 /* shrimp-min.png in Resources */,
 				7A7CF67420DCDF1E006D6744 /* shoppingcart-min.png in Resources */,
+				7A7CF6BC20DD169B006D6744 /* images.plist in Resources */,
 				7A7CF69220DCDF1E006D6744 /* jk-min.png in Resources */,
 				7A7CF68620DCDF1E006D6744 /* honeybee-min.png in Resources */,
 				7A7CF6A820DCDF1E006D6744 /* exercise-min.png in Resources */,
@@ -462,8 +472,10 @@
 				7A7CF62220DCDEC6006D6744 /* Idea+CoreDataProperties.swift in Sources */,
 				7A7CF6B620DCDF5F006D6744 /* CDIdea.swift in Sources */,
 				7A7CF60D20DCDE55006D6744 /* ViewController.swift in Sources */,
+				7A7CF6BE20DFBA1E006D6744 /* ThinkViewController.swift in Sources */,
 				7A7CF60B20DCDE55006D6744 /* AppDelegate.swift in Sources */,
 				7A7CF62120DCDEC6006D6744 /* Idea+CoreDataClass.swift in Sources */,
+				7A7CF6C020DFBC09006D6744 /* PImage.swift in Sources */,
 				7A7CF61320DCDE55006D6744 /* pachira.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

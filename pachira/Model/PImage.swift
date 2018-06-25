@@ -7,6 +7,9 @@ class PImage {
     self.id = id
     self.path = path
   }
+  func getUIImage() -> UIImage? {
+    return UIImage.init(named: self.path)
+  }
 }
 
 struct PImageManager {

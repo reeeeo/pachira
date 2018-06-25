@@ -14,8 +14,8 @@ class DetailViewController: UIViewController {
   }
   
   private func showDetail() {
-    self.myPic1.image = UIImage.init(named: PImageManager.findPImage(by: idea.pic1).path)
-    self.myPic2.image = UIImage.init(named: PImageManager.findPImage(by: idea.pic2).path)
+    self.myPic1.image = PImageManager.findPImage(by: idea.pic1).getUIImage()
+    self.myPic2.image = PImageManager.findPImage(by: idea.pic2).getUIImage()
     self.myIdeaName.text = idea.name
     self.myIdeaMemo.text = idea.memo
   }

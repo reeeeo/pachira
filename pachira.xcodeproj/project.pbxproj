@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A6A457B20EBA85B0086B926 /* PachiraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A457A20EBA85B0086B926 /* PachiraViewController.swift */; };
 		7A7CF60B20DCDE55006D6744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CF60A20DCDE55006D6744 /* AppDelegate.swift */; };
 		7A7CF60D20DCDE55006D6744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CF60C20DCDE55006D6744 /* ViewController.swift */; };
 		7A7CF61320DCDE55006D6744 /* pachira.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CF61120DCDE55006D6744 /* pachira.xcdatamodeld */; };
@@ -97,6 +98,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A6A457A20EBA85B0086B926 /* PachiraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PachiraViewController.swift; sourceTree = "<group>"; };
 		7A7CF60720DCDE55006D6744 /* pachira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pachira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7CF60A20DCDE55006D6744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A7CF60C20DCDE55006D6744 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				7A7CF6B420DCDF54006D6744 /* Model */,
 				7A7CF62320DCDEEA006D6744 /* image */,
 				7A7CF60A20DCDE55006D6744 /* AppDelegate.swift */,
+				7A6A457A20EBA85B0086B926 /* PachiraViewController.swift */,
 				7A7CF60C20DCDE55006D6744 /* ViewController.swift */,
 				7A7CF6BD20DFBA1E006D6744 /* ThinkViewController.swift */,
 				7A7CF6C120DFE3C5006D6744 /* ListViewController.swift */,
@@ -475,6 +478,7 @@
 				7A7CF6B620DCDF5F006D6744 /* CDIdea.swift in Sources */,
 				7A7CF60D20DCDE55006D6744 /* ViewController.swift in Sources */,
 				7A7CF6BE20DFBA1E006D6744 /* ThinkViewController.swift in Sources */,
+				7A6A457B20EBA85B0086B926 /* PachiraViewController.swift in Sources */,
 				7A7CF60B20DCDE55006D6744 /* AppDelegate.swift in Sources */,
 				7A7CF6C220DFE3C5006D6744 /* ListViewController.swift in Sources */,
 				7A7CF62120DCDEC6006D6744 /* Idea+CoreDataClass.swift in Sources */,

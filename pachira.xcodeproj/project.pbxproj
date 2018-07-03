@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7A7CF60B20DCDE55006D6744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CF60A20DCDE55006D6744 /* AppDelegate.swift */; };
 		7A7CF60D20DCDE55006D6744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CF60C20DCDE55006D6744 /* ViewController.swift */; };
-		7A7CF61020DCDE55006D6744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7CF60E20DCDE55006D6744 /* Main.storyboard */; };
 		7A7CF61320DCDE55006D6744 /* pachira.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A7CF61120DCDE55006D6744 /* pachira.xcdatamodeld */; };
 		7A7CF61520DCDE56006D6744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7CF61420DCDE56006D6744 /* Assets.xcassets */; };
 		7A7CF61820DCDE56006D6744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7CF61620DCDE56006D6744 /* LaunchScreen.storyboard */; };
@@ -101,7 +100,6 @@
 		7A7CF60720DCDE55006D6744 /* pachira.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pachira.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7CF60A20DCDE55006D6744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A7CF60C20DCDE55006D6744 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7A7CF60F20DCDE55006D6744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A7CF61220DCDE55006D6744 /* pachira.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = pachira.xcdatamodel; sourceTree = "<group>"; };
 		7A7CF61420DCDE56006D6744 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A7CF61720DCDE56006D6744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -229,7 +227,6 @@
 				7A7CF6BD20DFBA1E006D6744 /* ThinkViewController.swift */,
 				7A7CF6C120DFE3C5006D6744 /* ListViewController.swift */,
 				7A7CF6C320DFF0B3006D6744 /* DetailViewController.swift */,
-				7A7CF60E20DCDE55006D6744 /* Main.storyboard */,
 				7A7CF61420DCDE56006D6744 /* Assets.xcassets */,
 				7A7CF61620DCDE56006D6744 /* LaunchScreen.storyboard */,
 				7A7CF61920DCDE56006D6744 /* Info.plist */,
@@ -435,7 +432,6 @@
 				7A7CF67020DCDF1E006D6744 /* loveletter-min.png in Resources */,
 				7A7CF6A720DCDF1E006D6744 /* cheerleader-min.png in Resources */,
 				7A7CF68920DCDF1E006D6744 /* anonymous-min.png in Resources */,
-				7A7CF61020DCDE55006D6744 /* Main.storyboard in Resources */,
 				7A7CF6AE20DCDF1E006D6744 /* umbrella-min.png in Resources */,
 				7A7CF69D20DCDF1E006D6744 /* 50percentoff-min.png in Resources */,
 				7A7CF6AF20DCDF1E006D6744 /* kilroy-min.png in Resources */,
@@ -491,14 +487,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7A7CF60E20DCDE55006D6744 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A7CF60F20DCDE55006D6744 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7A7CF61620DCDE56006D6744 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

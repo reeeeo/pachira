@@ -1,20 +1,31 @@
 import UIKit
 
 class ListViewController: UIViewController {
-  @IBOutlet weak var myTableView: UITableView!
+  private lazy var myTableView: UITableView = {
+    let tableView = UITableView()
+    tableView.delegate = self
+    tableView.dataSource = self
+    return tableView
+  }()
   
   fileprivate var ideas: [Idea] = []
-  fileprivate var selectedIdea: Idea?
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.myTableView.dataSource = self
-    self.myTableView.delegate = self
+    self.navigationItem.title = "l!st"
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
     self.ideas = CDIdea.coreData.all()
+    self.myTableView.reloadData()
+    self.view = self.myTableView
   }
 }
 
-extension ListViewController: UITableViewDelegate, UITableViewDataSource {
+extension ListViewController: UITableViewDelegate {}
+
+extension ListViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return self.ideas.count
   }
@@ -23,21 +34,25 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "cell")
     let idea = self.ideas[indexPath.row]
     cell.textLabel?.text = idea.name
+    
+    cell.contentView.addSubview(getCellImageView(by: idea.pic1, height: cell.contentView.bounds.height, num: 1))
+    cell.contentView.addSubview(getCellImageView(by: idea.pic2, height: cell.contentView.bounds.height, num: 2))
     return cell
   }
   
-  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    self.selectedIdea = ideas[indexPath.row]
-    performSegue(withIdentifier: "toDetailSeg", sender: nil)
+  private func getCellImageView(by id: Int16, height: CGFloat, num: Int) -> UIImageView {
+    let iHeight: CGFloat = height
+    let iWidth: CGFloat = height
+    let posX: CGFloat = num == 1 ? self.view.bounds.size.width - iWidth * 2 - 10 : self.view.bounds.size.width - iWidth
+    let posY: CGFloat = 0.0
+    let imgV = UIImageView(frame: CGRect(x: posX, y: posY, width: iWidth, height: iHeight))
+    imgV.image = PImageManager.findPImage(by: id).getUIImage()
+    return imgV
   }
   
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    let destination = segue.destination
-    if destination is DetailViewController {
-      let dvc: DetailViewController = destination as! DetailViewController
-      dvc.idea = self.selectedIdea
-    } else {
-      super.prepare(for: segue, sender: sender)
-    }
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let next = DetailViewController()
+    next.idea = ideas[indexPath.row]
+    self.navigationController?.pushViewController(next, animated: true)
   }
 }

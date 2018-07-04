@@ -96,7 +96,7 @@ class PachiraViewController: UIViewController {
     let posX: CGFloat = self.view.bounds.width / 2 - tWidth / 2
     let posY: CGFloat = self.view.bounds.height / 2 + tHeight /  2 - 160
     self.myIdeaMemo = UITextView(frame: CGRect(x: posX, y: posY, width: tWidth, height: tHeight))
-    self.myIdeaMemo.backgroundColor = UIColor.lightGray
+    self.myIdeaMemo.backgroundColor =  UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 1.0)
     self.myScrollView.addSubview(self.myIdeaMemo)
   }
   

@@ -5,7 +5,7 @@ class DetailViewController: PachiraViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.navigationItem.title = "deta!l"
+    self.navigationItem.title = idea.name!
     self.view.backgroundColor = .white
     self.showDetail()
     self.addToolbarButton()

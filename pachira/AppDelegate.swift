@@ -8,6 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var navigationController: UINavigationController?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    sleep(2)
     let viewController: ViewController = ViewController()
     navigationController = UINavigationController(rootViewController: viewController)
     self.window = UIWindow(frame: UIScreen.main.bounds)

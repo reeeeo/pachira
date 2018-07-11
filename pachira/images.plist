@@ -1010,59 +1010,47 @@
         <key>id</key>
         <integer>168</integer>
         <key>path</key>
-        <string>think-min.png</string>
+        <string>tobacco-min.png</string>
       </dict>
       <dict>
         <key>id</key>
         <integer>169</integer>
         <key>path</key>
-        <string>thinkingapple-min.png</string>
+        <string>toilet-paper-min.png</string>
       </dict>
       <dict>
         <key>id</key>
         <integer>170</integer>
         <key>path</key>
-        <string>tobacco-min.png</string>
+        <string>towl-min.png</string>
       </dict>
       <dict>
         <key>id</key>
         <integer>171</integer>
         <key>path</key>
-        <string>toilet-paper-min.png</string>
+        <string>triangle-min.png</string>
       </dict>
       <dict>
         <key>id</key>
         <integer>172</integer>
         <key>path</key>
-        <string>towl-min.png</string>
+        <string>umbrella-min.png</string>
       </dict>
       <dict>
         <key>id</key>
         <integer>173</integer>
         <key>path</key>
-        <string>triangle-min.png</string>
+        <string>virus-min.png</string>
       </dict>
       <dict>
         <key>id</key>
         <integer>174</integer>
         <key>path</key>
-        <string>umbrella-min.png</string>
-      </dict>
-      <dict>
-        <key>id</key>
-        <integer>175</integer>
-        <key>path</key>
-        <string>virus-min.png</string>
-      </dict>
-      <dict>
-        <key>id</key>
-        <integer>176</integer>
-        <key>path</key>
         <string>wheelchair-min.png</string>
       </dict>
       <dict>
         <key>id</key>
-        <integer>177</integer>
+        <integer>175</integer>
         <key>path</key>
         <string>wine-min.png</string>
       </dict>

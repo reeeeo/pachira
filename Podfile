@@ -7,5 +7,7 @@ target 'pachira' do
 
   # Pods for pachira
   pod 'IQKeyboardManagerSwift'
+  pod 'Firebase/Core'
+  pod 'Firebase/AdMob'
 
 end

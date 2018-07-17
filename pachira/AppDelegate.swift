@@ -1,6 +1,7 @@
 import UIKit
 import CoreData
 import IQKeyboardManagerSwift
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -9,7 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var navigationController: UINavigationController?
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    sleep(2)
+    sleep(1)
     let viewController: ViewController = ViewController()
     navigationController = UINavigationController(rootViewController: viewController)
     self.window = UIWindow(frame: UIScreen.main.bounds)
@@ -18,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window!.makeKeyAndVisible()
     
     IQKeyboardManager.shared.enable = true
+    
+    FirebaseApp.configure()
+    GADMobileAds.configure(withApplicationID: "ca-app-pub-7392096029934987~6138878031")
     
     return true
   }

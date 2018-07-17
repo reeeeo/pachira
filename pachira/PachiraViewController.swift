@@ -1,6 +1,7 @@
 import UIKit
+import GoogleMobileAds
 
-class PachiraViewController: UIViewController {
+class PachiraViewController: UIViewController, GADBannerViewDelegate {
   internal var myPic1: UIImageView!
   internal var myPic2: UIImageView!
   internal var myIdeaName: UITextField!
@@ -9,6 +10,8 @@ class PachiraViewController: UIViewController {
   
   private var screenWidth: CGFloat!
   private var screenHeight: CGFloat!
+  
+  var bannerView: GADBannerView!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -21,6 +24,17 @@ class PachiraViewController: UIViewController {
     self.addIdeaNameTextField()
     self.addIdeaMemoTextView()
     self.addToolBar()
+    self.addAdView()
+  }
+  
+  private func addAdView() {
+    bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+    bannerView.translatesAutoresizingMaskIntoConstraints = false
+    bannerView.layer.position = CGPoint(x: view.bounds.width / 2, y: self.view.bounds.height - 25.0)
+    bannerView.adUnitID = "ca-app-pub-7392096029934987/5344671113"
+    bannerView.rootViewController = self
+    self.view.addSubview(bannerView)
+    bannerView.load(GADRequest())
   }
   
   private func addIdeaNameTextField() {
@@ -66,7 +80,7 @@ class PachiraViewController: UIViewController {
   
   private func addToolBar() {
     myToolbar = UIToolbar(frame: CGRect(x: 0, y: self.view.bounds.size.height - 65, width: self.view.bounds.size.width, height: 40.0))
-    myToolbar.layer.position = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height - 20.0)
+    myToolbar.layer.position = CGPoint(x: self.view.bounds.width / 2, y: self.view.bounds.height - 70.0)
     self.view.addSubview(self.myToolbar)
   }
   

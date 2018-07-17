@@ -31,7 +31,8 @@ class PachiraViewController: UIViewController, GADBannerViewDelegate {
     bannerView = GADBannerView(adSize: kGADAdSizeBanner)
     bannerView.translatesAutoresizingMaskIntoConstraints = false
     bannerView.layer.position = CGPoint(x: view.bounds.width / 2, y: self.view.bounds.height - 25.0)
-    bannerView.adUnitID = "ca-app-pub-7392096029934987/5344671113"
+//    bannerView.adUnitID = "ca-app-pub-7392096029934987/5344671113"
+    bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
     bannerView.rootViewController = self
     self.view.addSubview(bannerView)
     bannerView.load(GADRequest())

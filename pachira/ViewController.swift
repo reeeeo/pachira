@@ -1,5 +1,4 @@
 import UIKit
-import GoogleMobileAds
 
 class ViewController: UIViewController {
   
@@ -10,11 +9,10 @@ class ViewController: UIViewController {
     self.addListButton()
     self.addThinkingAppleImage()
     self.addThinkImage()
-    self.addAdView()
   }
 }
 
-extension ViewController: GADBannerViewDelegate {
+extension ViewController {
   private func addThinkButton() {
     let thinkButton = UIButton(type: .system)
     thinkButton.setTitle("th!nk", for: .normal)
@@ -69,15 +67,5 @@ extension ViewController: GADBannerViewDelegate {
     let thinkImage = UIImageView(frame: CGRect(x: posX, y: posY, width: iWidth, height: iHeight))
     thinkImage.image = UIImage(named: "think-min.png")
     self.view.addSubview(thinkImage)
-  }
-  
-  private func addAdView() {
-    var bannerView: GADBannerView = GADBannerView()
-    bannerView = GADBannerView(adSize:kGADAdSizeBanner)
-    bannerView.adUnitID = "ca-app-pub-7392096029934987/5344671113"
-    bannerView.delegate = self
-    bannerView.rootViewController = self
-    self.view.addSubview(bannerView)
-    bannerView.load(GADRequest())
   }
 }

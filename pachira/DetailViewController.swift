@@ -89,7 +89,10 @@ class DetailViewController: PachiraViewController {
   }
   
   @IBAction func shareIdea(_ sender: UIBarButtonItem) {
-    let textItem = "新しいアイデア「\(myIdeaName.text!)」を考えました！"
+    let textItem = """
+    pach!raを使って新しいアイデア「\(myIdeaName.text!)」を考えました！
+    [ https://itunes.apple.com/us/app/id1411187196 ]
+    """
     let controller = UIActivityViewController(
       activityItems: [textItem],
       applicationActivities: nil)
